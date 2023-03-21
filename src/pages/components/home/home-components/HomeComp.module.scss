@@ -1,0 +1,28 @@
+@import '../../../../assets/style/mixin.scss';
+
+.img{
+    width: 49.5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+
+    @include screen(601px){
+        width: 100%;
+    }
+    @include screen(500px){
+        height: 311px;
+    }
+    @include screen(400px){
+        height: 245px;
+    }
+    @include screen(320px){
+        height: 191px;
+    }
+
+    &:hover{
+        opacity: 1;
+    }
+}
